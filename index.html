@@ -31,6 +31,24 @@ a{
 	color: white
 }
 
+
+#motion{
+	height:100px;
+	width: 100%;
+	background-color: yellow;
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example{
+	0% {background-color: lightpink; left: 100px; top: 0px;}
+	25% {background-color: blue; left 200px; top:0px;}
+	50% {background-color: hotpink; left:200px;top:200px;}
+	75% {background-color: lightblue; left:0px;top:200px;}
+	100%{background-color: skyblue;left:0px;top:200px;}
+}
+
 body{
 	background-color: mistyrose;
 	margin: 0px;
@@ -42,16 +60,19 @@ body{
 </head>
 <body>
 
+
 <div id= "menu">
 
 <a href="projects.html">
-<div class="button">projects!</div>
+<div class="button">projects🤪!</div>
 	<a href="journal.html">
-<div class="button">journal!</div>
+<div class="button">journal😇!</div>
 <a href="aboutme.html">
-<div class="button">about me!</div>
+<div class="button">about me🥳!</div>
 </div>
 	
 </a>
+
+<div id="motion"></div>
 </body>
 </html>
