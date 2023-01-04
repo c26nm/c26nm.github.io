@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #pully {
+        width: 50px;
+        height: 150px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("pully.jpg");
+        display: inline-block;
+
+    }
+
+    #emoji {
+        width: 150px;
+        height: 150px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        border-style: solid;
+
+    }
+
+    #emoji1 {
+        width: 150px;
+        height: 150px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        border-style: solid;
+
+    }
+
+    #emoji2 {
+        width: 150px;
+        height: 150px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        border-style: solid;
+
+    }
+
+    #writing {
+        width: 500px;
+        height: 100px;
+        font-size: 50px;
+    }
+
+    #moneysign{
+        width: 25px;
+        height: 100px;
+        font-size: 50px;
+        display: inline-block;
+
+    }
+    #score{
+    	width: 100px;
+    	height: 50px;
+    	font-size: 50px;
+        display: inline-block;
+
+    }
+    </style>
+</head>
+
+<body>
+    <div id="emoji"></div>
+    <div id="emoji1"></div>
+    <div id="emoji2"></div>
+    <div id="pully"></div>
+            <div id = "moneysign">$</div>
+    <div id = "score"></div>
+    <div id="writing"></div>
+
+    <script type="text/javascript">
+    var face = ["url(burger.png)", "url(pizza.png)", "url(cupcake.png)", "url(taco.png)", "url(sushi.png)", "url(icecream.png)", "url(fries.png)","url(cookie.png)", "url(burrito.png)", "url(salad.png)" ];
+    "url(cookie.png)", "url(burrito.png)", "url(salad.png)"
+    var pully = document.getElementById("pully")
+    var score = document.getElementById("score")
+    score.innerText = Number("0");
+    // var moneysign = document.getElementById("moneysign")
+    // moneysign = "$"
+
+    pully.addEventListener("click", function() {
+        randomNumber = Math.round(Math.random() * 10)
+        randomNumber1 = Math.round(Math.random() * 10)
+        randomNumber2 = Math.round(Math.random() * 10)
+        var emoji = document.getElementById("emoji");
+        var emoji2 = document.getElementById("emoji2");
+        var emoji1 = document.getElementById("emoji1");
+        var writing = document.getElementById("writing")
+
+        emoji.style.backgroundImage = face[randomNumber];
+        emoji1.style.backgroundImage = face[randomNumber1];
+        emoji2.style.backgroundImage = face[randomNumber2];
+if (emoji.style.backgroundImage == emoji1.style.backgroundImage == emoji2.style.backgroundImage) { writing.innerText = "3/3!!!!!", score.innerText = score.innerText + Number("10"); } 
+    else{
+        if (emoji.style.backgroundImage == emoji1.style.backgroundImage) { writing.innerText = "2/3! SO CLOSE", score.innerText = Number(score.innerText) + Number("10");   } 
+        	else { 
+        		if (emoji1.style.backgroundImage == emoji2.style.backgroundImage) { writing.innerText = "2/3! SO CLOSE", score.innerText = Number(score.innerText) + Number("10");} 
+        			else { 
+        				if (emoji.style.backgroundImage == emoji2.style.backgroundImage) {  writing.innerText = "2/3 SO CLOSE", score.innerText = Number(score.innerText) + Number("10");  } 
+        					else { writing.innerText = "",score.innerText = score.innerText } } } }
+    
+        				
+
+
+
+
+    });
+    </script>
+</body>
+
+</html>

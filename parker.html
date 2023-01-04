@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>doja</title>
+</head>
+<style type="text/css">
+	#doja{
+		height: 500px;
+		width:500px;
+		background-image: url(doja.gif);
+		background-repeat:no-repeat;
+		background-size:contain;
+		position: absolute;
+
+
+	}
+
+
+
+</style>
+<body>
+
+<div id="doja"</div>
+
+
+
+<script type="text/javascript">
+
+document.addEventListener("click",function makeDoja(event){
+
+	doja.style.left = event.clientX -200 + "px";
+	doja.style.top = event.clientY -200 + "px";
+
+	//console.log will record coordinates in the console
+
+
+console.log(event.clientX);
+console.log(event.clientY);
+
+
+
+	})
+	
+
+
+</script>
+</body>
+</html>
