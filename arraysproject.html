@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>carbon cycle test review</title>
+	<style type="text/css">
+		
+		div{ 
+		width:400px; 
+		height:400px;
+		border:1px solid blue;
+	}
+
+	</style>
+</head>
+<body>
+	<div id=box1></div>
+	<div id=box2></div>
+<script type="text/javascript">
+	var bioWords=["carbon cycle", "photosynthesis", "cellular respiration", "fossil fuel", "decomposition", "greenhouse gas"]
+	var definitions = ["The recycling of carbon between living (biotic) and nonliving (abiotic) parts of the biosphere", "Plants use the sun's energy to change water and carbon dioxide into sugars (glucose) and Oxygen. Carbon is removed from the atmosphere and stored in food", "A process when living organisms (plants & animals) break down sugars (glucose) and oxygen and change them into ATP energy, carbon dioxide CO2, and Water. Carbon is released into the amosphere","Coal, oil, natural gas, and other fuels that are ancient remains of plants and animals", "The breakdown of dead matter and wastes by decomposers; stored carbon from animal remains is released back into the atmosphere as carbon dioxide", "gas in the atmosphere that trap heat"]
+	function wait (){
+		box2.innerText = definitions[number]
+
+	}
+var number;
+	document.addEventListener("click", function(){
+		number = Math.round(Math.random()*2);
+
+		box1.innerText = bioWords[number]
+
+		setTimeout(wait, 4000)
+
+
+	})
+
+
+</script>
+</body>
+</html>
