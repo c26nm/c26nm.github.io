@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+		.breakfast{
+			width:100px;
+			height:100px;
+			background-color:lightpink;
+			display:inline-block;
+			margin:3px;
+			background-image:url(https://thedecoratedcookie.com/wp-content/uploads/2018/07/820-bakery-frosting-cupcake.jpg);
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+		function makeCroissant(placeholder){
+
+		
+		var croissant = document.
+		createElement("div");
+		document.body.appendChild(croissant);
+		croissant.classList.add("breakfast");
+		croissant.innerText =placeholder;
+		croissant.addEventListener("click",function(){
+		croissant.style.backgroundImage="url(https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_2700,h_2700,c_limit/chocolate-chip-cookie.jpg)"
+
+		})
+
+}
+for (var i=1;i<1000;i=i+1) 
+	{makeCroissant(i)}
+
+
+	</script>
+
+</body>
+</html>

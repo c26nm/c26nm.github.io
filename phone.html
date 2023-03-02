@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Domine&family=Playfair+Display&family=Slabo+27px&family=Yeseva+One&display=swap" rel="stylesheet">
+	<title></title>
+<style type="text/css">
+
+	
+	.dispo{
+height: 250px;
+width: 250px;
+background-color: lightblue;
+margin: 8px;
+display: inline-block;
+position: relative;
+	}
+#dispo:hover{
+	transition: 1s;
+	background-color: lightpink;
+}
+
+
+#dispo1:hover{
+	transition: 3s;
+	background-image: url(dispo1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+#dispo2:hover{
+	transition: 3s;
+	background-image: url(dispo2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#dispo3:hover{
+	background-image: url(dispo3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+#dispo4:hover{
+	background-image: url(dispo4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#dispo5:hover{
+	background-image: url(dispo5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#dispo6:hover{
+	background-image: url(dispo6.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#dispo7:hover{
+	background-image: url(dispo7.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#dispo8:hover{
+	background-image: url(dispo8.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#dispo9:hover{
+	background-image: url(dispo9.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#dispo10:hover{
+	background-image: url(dispo10.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#dispo11:hover{
+	background-image: url(dispo11.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#dispo12:hover{
+	background-image: url(dispo12.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+#dispo13:hover{
+	background-image: url(dispo13.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#dispo14:hover{
+	background-image: url(dispo14.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#dispo15:hover{
+	background-image: url(dispo15.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+h1{
+	font-size: 60px;
+	font-family: 'Domine', serif;
+	color: dodgerblue;
+
+}
+	
+p{
+	font-size: 20px;
+	font-family: 'Domine', serif;
+	color: dodgerblue;
+
+}	
+
+	#camera{
+		height: 100px;
+		width: 100px;
+		background-image: url(camera.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+
+</style> 'pppp'
+</head>
+<body>
+	<h1>click around for some of my favorite disposables</h1>
+<p>hover over the boxes to see the dispos and click  to make the camera logo change spots</p>
+<div class="pictures" id= "pictures1"></div> 
+<div class="pictures" id= "pictures2"></div>
+<div class="pictures" id= "pictures3"></div>
+<div class="pictures" id= "pictures4"></div>
+<div class="pictures" id= "pictures5"></div>
+<div class="pictures" id= "pictures6"></div>
+<div class="pictures" id= "pictures7"></div>
+<div class="pictures" id= "pictures8"></div>
+<div class="pictures" id= "pictures9"></div>
+<div class="pictures" id= "pictures10"></div>
+<div class="pictures" id= "pictures11"></div>
+<div class="pictures" id= "pictures12"></div>
+<div class="pictures" id= "pictures13"></div>
+<div class="pictures" id= "pictures14"></div>
+<div class="pictures" id= "pictures15"></div>
+
+<div id= "camera"></div>
+
+<script type="text/javascript">
+	
+document.addEventListener("click",function makeYankees(event){
+
+
+	console.log(event.clientX);
+	console.log(event.clientY);
+
+camera.style.left = event.clientX - 50 + "px";
+camera.style.top = event.clientY - 50 + "px";
+
+})
+
+
+
+
+
+</script>
+</body>
+</html>
