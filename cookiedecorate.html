@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #cookie {
+        width: 600px;
+        height: 600px;
+        background-image: url("cookie.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #chocchips {
+
+        background-image: url(chocchips.png);
+        background-size: cover;
+    }
+
+    #marshmallows {
+
+        background-image: url(marshmallows.png);
+    }
+
+    #sprinkles {
+        background-image: url(sprinkles.png)
+    }
+
+    #nutella {
+        background-image: url(nutella.png)
+    }
+
+    #mandms {
+        background-image: url(mandms.png)
+    }
+
+    #cream {
+        background-image: url(cream.png);
+    }
+
+    .topping {
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        display: inline-block;
+        position: relative;
+
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="topping" id="chocchips"></div>
+    <div class="topping" id="marshmallows"></div>
+    <div class="topping" id="sprinkles"></div>
+    <div class="topping" id="mandms"></div>
+    <div class="topping" id="cream"></div>
+    <div class="topping" id="nutella"></div>
+    <div id="cookie"></div>
+    <script type="text/javascript">
+    var image;
+
+
+
+
+
+    function makeTopping() {
+        var chocchips = document.createElement("chocchips");
+        var angle = Math.floor((Math.random() * 360) + 1);
+        chocchips.style.width = "100px";
+        chocchips.style.height = "100px";
+        chocchips.style.borderRadius = "50%";
+        chocchips.style.position = "absolute";
+        chocchips.style.backgroundImage = "url(" + image + ")";
+        chocchips.style.backgroundSize = "cover";
+        chocchips.style.transform = "rotate("
+        + angle + "deg)";
+
+
+
+        cookie.addEventListener("mousemove", function(event) {
+            console.log(event)
+
+        });
+
+
+        cookie.appendChild(chocchips);
+
+        chocchips.style.left =   event.clientX - 50 + "px";
+        chocchips.style.top = event.clientY - 50 + "px";
+
+
+
+    };
+
+    chocchips.addEventListener("click", function() {
+
+        image = "chocchips.png"
+    });
+
+    marshmallows.addEventListener("click", function() {
+
+        image = "marshmallows.png"
+    });
+
+
+    sprinkles.addEventListener("click", function() {
+
+        image = "sprinkles.png"
+    });
+
+
+
+    mandms.addEventListener("click", function() {
+
+        image = "mandms.png"
+    });
+
+
+    cream.addEventListener("click", function() {
+
+        image = "cream.png"
+    });
+    nutella.addEventListener("click", function() {
+
+        image = "nutella.png"
+    });
+
+
+
+    cookie.addEventListener("click", makeTopping);
+    </script>
+</body>
+
+</html>
