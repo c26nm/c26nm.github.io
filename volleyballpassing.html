@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+
+<style type="text/css">
+
+
+
+body{
+font-size: 100px;
+color:royalblue;
+background-color: lightpink;
+}
+#passer1{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh-DJ-qL2Kg8JUBc38iVq_gQBCayFKiIPwEQ&usqp=CAU);
+height: 200px;
+width: 200px;
+background-repeat:no-repeat;
+background-size:contain;
+position: absolute;
+margin-top: 150px;
+}
+
+#passer2{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh-DJ-qL2Kg8JUBc38iVq_gQBCayFKiIPwEQ&usqp=CAU);
+height: 200px;
+width: 200px;
+background-repeat:no-repeat;
+background-size:contain;
+position: absolute;
+margin-left: 1200px;
+margin-top: 150px;
+}
+
+
+#ball{
+background-image: url(https://atlas-content1-cdn.pixelsquid.com/assets_v2/223/2230479251683939652/jpeg-600/G03.jpg);
+height: 75px;
+width: 75px;
+background-repeat:no-repeat;
+background-size:contain;
+position: absolute;
+margin-top: 200px;
+margin-left: 500px;
+
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+PASS A VOLLEYBALL!!
+
+<div id="passer1"></div>
+
+<div id="passer2"></div>
+
+<div id="ball"></div>
+
+<script type="text/javascript">
+ball.style.right = "0px";
+
+var x = parseInt(ball.style.right);
+
+document.addEventListener("keydown", function(event){
+console.log(event.keyCode)
+
+
+
+if(event.keyCode ==39){
+x = x-1200;
+
+ball.style.right = x +"px";
+
+}
+else if(event.keyCode ==37){
+x = x+1200
+
+ball.style.right = x +"px";
+}
+})
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
